@@ -72,3 +72,11 @@
   margin-left: 100px;
   margin-right: 100px;
 }
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 800px;
+}
