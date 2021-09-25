@@ -1,9 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link} from "react-router-dom";
 const AdminPage = () => {
   return (
     <div>
-      <div>Admin Page</div>
+    
+
+      <div>
+      <div className="App">ADMIN PAGE</div>
       <div className="card">
         <div className="card-body">
           <h5 className="card-title">Add New Student</h5>
@@ -22,7 +25,18 @@ const AdminPage = () => {
           </Link>
         </div>
       </div>
+      <div className="card">
+        <div className="card-body">
+          <h5 className="card-title">Take Attendance</h5>
+          <p className="card-text">Click here to view student attendance.</p>
+          <Link to="/takeAttendance" className="btn btn-primary">
+            View
+          </Link>
+        </div>
+      </div>
     </div>
+    </div>
+    
   );
 };
 

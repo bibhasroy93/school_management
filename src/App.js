@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 
-import NavHeader from "./components/NavHeader";
+
 import About from "./pages/About";
 import AdminPage from "./pages/AdminPage";
 import HomePage from "./pages/HomePage";
@@ -11,11 +11,12 @@ import ViewDetails from "./pages/ViewDetails";
 import ViewStudent from "./pages/ViewStudent";
 import EditDetails from "./pages/EditDetails";
 import AddStudent from "./pages/AddStudent";
+import AttendancePage from "./pages/AttendancePage";
 function App() {
   return (
     <Router>
       <div className="App">
-        <NavHeader />
+       
         <Switch>
           <Route exact path="/" component={HomePage}></Route>
           <Route exact path="/about" component={About}></Route>
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/viewDetails" component={ViewDetails}></Route>
           <Route exact path="/editDetails" component={EditDetails}></Route>
           <Route exact path="/addStudent" component={AddStudent}></Route>
+          <Route exact path="/takeAttendance" component={AttendancePage}></Route>
         </Switch>
       </div>
     </Router>
